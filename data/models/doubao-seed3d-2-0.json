@@ -6,7 +6,7 @@
   "name": "Doubao-Seed3D-2.0",
   "api": {
     "types": [
-      "images"
+      "3d"
     ]
   },
   "limits": {
@@ -19,7 +19,7 @@
       "image"
     ],
     "output": [
-      "image"
+      "3d"
     ]
   },
   "reasoning": {

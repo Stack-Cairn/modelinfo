@@ -1,0 +1,83 @@
+{
+  "id": "fugu",
+  "object": "model",
+  "created": 1782086400,
+  "owned_by": "sakana",
+  "name": "Sakana Fugu",
+  "api": {
+    "types": [
+      "messages",
+      "responses"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "high",
+      "xhigh",
+      "max"
+    ]
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-06-22",
+    "knowledge_cutoff": null,
+    "description": "Sakana AI multi-agent orchestration model exposed as a single API model; the default Fugu model balancing performance and latency.",
+    "docs": "https://console.sakana.ai/models",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Models | Sakana AI Console",
+      "url": "https://console.sakana.ai/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Get started | Sakana AI Console",
+      "url": "https://console.sakana.ai/get-started",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Sakana Fugu: One Model to Command Them All | Sakana AI",
+      "url": "https://sakana.ai/fugu-release/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Sakana AI Console",
+      "url": "https://console.sakana.ai/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "sakana",
+      "model": "fugu",
+      "base_url": "https://api.sakana.ai",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions",
+        "responses": "POST /v1/responses"
+      },
+      "reasoning_param": "reasoning_effort"
+    }
+  ]
+}

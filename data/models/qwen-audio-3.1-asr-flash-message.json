@@ -10,9 +10,9 @@
     ]
   },
   "limits": {
-    "context": 8192,
-    "input": 7168,
-    "output": 1024
+    "context": null,
+    "input": null,
+    "output": null
   },
   "modalities": {
     "input": [
@@ -23,7 +23,7 @@
     ]
   },
   "reasoning": {
-    "supported": false,
+    "supported": null,
     "efforts": []
   },
   "pricing": {
@@ -39,7 +39,7 @@
     "status": "active",
     "release_date": null,
     "knowledge_cutoff": null,
-    "description": "Qwen-Audio 3.1 speech recognition model with message-style API.",
+    "description": null,
     "docs": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
     "verified_at": "2026-10-11"
   },

@@ -25,7 +25,7 @@
     ]
   },
   "reasoning": {
-    "supported": false,
+    "supported": null,
     "efforts": []
   },
   "pricing": {
@@ -41,7 +41,7 @@
     "status": "active",
     "release_date": "2026-04-03",
     "knowledge_cutoff": null,
-    "description": "Wan2.7 reference-to-video model.",
+    "description": null,
     "docs": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
     "verified_at": "2026-10-11"
   },

@@ -23,7 +23,7 @@
     ]
   },
   "reasoning": {
-    "supported": false,
+    "supported": null,
     "efforts": []
   },
   "pricing": {
@@ -39,7 +39,7 @@
     "status": "active",
     "release_date": "2026-01-21",
     "knowledge_cutoff": null,
-    "description": "Qwen3 instruction-controlled real-time speech synthesis model.",
+    "description": null,
     "docs": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
     "verified_at": "2026-10-11"
   },

@@ -24,7 +24,7 @@
     ]
   },
   "reasoning": {
-    "supported": false,
+    "supported": null,
     "efforts": []
   },
   "pricing": {
@@ -40,7 +40,7 @@
     "status": "active",
     "release_date": "2025-09-19",
     "knowledge_cutoff": null,
-    "description": "Wan2.5 image-to-video preview model.",
+    "description": null,
     "docs": "https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference",
     "verified_at": "2026-10-11"
   },

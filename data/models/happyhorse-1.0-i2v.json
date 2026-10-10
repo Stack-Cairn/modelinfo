@@ -24,7 +24,7 @@
     ]
   },
   "reasoning": {
-    "supported": false,
+    "supported": null,
     "efforts": []
   },
   "pricing": {
@@ -40,7 +40,7 @@
     "status": "active",
     "release_date": "2026-04-22",
     "knowledge_cutoff": null,
-    "description": "HappyHorse 1.0 image-to-video model.",
+    "description": null,
     "docs": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
     "verified_at": "2026-10-11"
   },

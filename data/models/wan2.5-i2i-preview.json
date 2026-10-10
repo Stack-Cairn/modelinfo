@@ -24,7 +24,7 @@
     ]
   },
   "reasoning": {
-    "supported": false,
+    "supported": null,
     "efforts": []
   },
   "pricing": {
@@ -40,7 +40,7 @@
     "status": "active",
     "release_date": "2025-09-23",
     "knowledge_cutoff": null,
-    "description": "Wan2.5 image editing preview model.",
+    "description": null,
     "docs": "https://www.alibabacloud.com/help/en/model-studio/qwen-image-api",
     "verified_at": "2026-10-11"
   },

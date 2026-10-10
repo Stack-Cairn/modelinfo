@@ -23,7 +23,7 @@
     ]
   },
   "reasoning": {
-    "supported": false,
+    "supported": null,
     "efforts": []
   },
   "pricing": {
@@ -39,7 +39,7 @@
     "status": "active",
     "release_date": "2025-01-09",
     "knowledge_cutoff": null,
-    "description": "Wan2.1 text-to-video model, plus tier.",
+    "description": null,
     "docs": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
     "verified_at": "2026-10-11"
   },

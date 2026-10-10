@@ -24,7 +24,7 @@
     ]
   },
   "reasoning": {
-    "supported": false,
+    "supported": null,
     "efforts": []
   },
   "pricing": {
@@ -40,7 +40,7 @@
     "status": "active",
     "release_date": "2025-04-07",
     "knowledge_cutoff": null,
-    "description": "Wan2.1 first-and-last-frame video model, plus tier.",
+    "description": null,
     "docs": "https://www.alibabacloud.com/help/en/model-studio/image-to-video-by-first-and-last-frame-api-reference",
     "verified_at": "2026-10-11"
   },

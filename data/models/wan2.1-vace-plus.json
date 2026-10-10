@@ -25,7 +25,7 @@
     ]
   },
   "reasoning": {
-    "supported": false,
+    "supported": null,
     "efforts": []
   },
   "pricing": {
@@ -41,7 +41,7 @@
     "status": "active",
     "release_date": "2025-05-14",
     "knowledge_cutoff": null,
-    "description": "Wan2.1 general video editing model.",
+    "description": null,
     "docs": "https://www.alibabacloud.com/help/en/model-studio/wan-video-editing-api-reference",
     "verified_at": "2026-10-11"
   },

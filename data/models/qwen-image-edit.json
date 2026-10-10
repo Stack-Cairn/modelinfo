@@ -24,7 +24,7 @@
     ]
   },
   "reasoning": {
-    "supported": false,
+    "supported": null,
     "efforts": []
   },
   "pricing": {
@@ -40,7 +40,7 @@
     "status": "active",
     "release_date": "2025-08-18",
     "knowledge_cutoff": null,
-    "description": "Qwen image editing model.",
+    "description": null,
     "docs": "https://www.alibabacloud.com/help/en/model-studio/qwen-image-api",
     "verified_at": "2026-10-11"
   },

@@ -7,6 +7,8 @@ import SectionFrame from '../components/SectionFrame.astro';
 import FilterMenu from '../components/FilterMenu.astro';
 import ModelRow from '../components/ModelRow.astro';
 import Icon from '../components/Icon.astro';
+import CompareToggle from '../components/CompareToggle.astro';
+import CompareTray from '../components/CompareTray.astro';
 import { getModels, KINDS, latestVerified, modelKind, ownerName } from '../lib/models';
 import { dict, type Lang } from '../i18n';
 
@@ -51,6 +53,7 @@ const kindOptions = [
       source={t.source}
       stamp={t.verified(latestVerified(models) ?? '—')}
     >
+      <CompareToggle slot="actions" lang={lang} />
       <button type="button" slot="actions" class="models__toggle" data-view-toggle aria-pressed="false">
         <span data-view-label-off>{t.showAll}</span><span data-view-label-on hidden>{t.showLess}</span>
       </button>
@@ -70,6 +73,7 @@ const kindOptions = [
       </div>
       </div>
     </SectionFrame>
+    <CompareTray lang={lang} />
 
   </main>
 </BaseLayout>

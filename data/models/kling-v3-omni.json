@@ -2,7 +2,7 @@
   "id": "kling-v3-omni",
   "object": "model",
   "created": null,
-  "owned_by": "kling",
+  "owned_by": "kuaishou",
   "name": "Kling 3.0 Omni",
   "api": {
     "types": [

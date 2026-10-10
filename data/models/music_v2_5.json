@@ -26,14 +26,7 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": {
-    "currency": "USD",
-    "unit": "minute",
-    "input": 0.15,
-    "output": null,
-    "cache_read": null,
-    "cache_write": null
-  },
+  "pricing": null,
   "features": [],
   "info": {
     "status": "active",

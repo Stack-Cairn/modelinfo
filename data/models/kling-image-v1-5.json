@@ -1,0 +1,62 @@
+{
+  "id": "kling-image-v1-5",
+  "object": "model",
+  "created": null,
+  "owned_by": "kuaishou",
+  "name": "Kling Image 1.5",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Kling Image 1.5 image model, retired. Official notice: retired on 2026-09-15.",
+    "docs": "https://kling.ai/document-api/api/image/1-5/image-generation",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Kling Image 1.5 | 可灵 API 文档",
+      "url": "https://kling.ai/document-api/api/image/1-5/image-generation",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "部分旧版模型下线预告 | 可灵 API 文档",
+      "url": "https://kling.ai/document-api/",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "kuaishou",
+      "model": "kling-v1-5",
+      "base_url": "https://api-singapore.klingai.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

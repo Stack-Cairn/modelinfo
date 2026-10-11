@@ -17,7 +17,9 @@
   "modalities": {
     "input": [
       "text",
-      "audio"
+      "audio",
+      "image",
+      "video"
     ],
     "output": [
       "text",
@@ -43,6 +45,11 @@
     {
       "title": "更新日志 | LongCat API 开放平台",
       "url": "https://longcat.chat/platform/docs/zh/ChangeLog.html",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档 API 文档 | LongCat API 开放平台（原网址 https://longcat.chat/platform/docs/APIDocs.html）",
+      "url": "https://web.archive.org/web/20260406220010/https://longcat.chat/platform/docs/APIDocs.html",
       "retrieved_at": "2026-10-11"
     }
   ],

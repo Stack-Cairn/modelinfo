@@ -16,11 +16,11 @@
   },
   "modalities": {
     "input": [
-      "image",
-      "text"
+      "image"
     ],
     "output": [
-      "video"
+      "video",
+      "audio"
     ]
   },
   "reasoning": {
@@ -44,6 +44,11 @@
     {
       "title": "模型版本升级及退役机制 | 百度千帆",
       "url": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "百度蒸汽机（MuseSteamer）MCP | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan-docs/s/amejnlwya",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -17,7 +17,8 @@
   "modalities": {
     "input": [
       "text",
-      "image"
+      "image",
+      "video"
     ],
     "output": [
       "text"
@@ -46,6 +47,11 @@
     {
       "title": "模型下线公告 | 火山方舟",
       "url": "https://www.volcengine.com/docs/82379/1350667",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档 模型列表 | 火山方舟（原网址 https://www.volcengine.com/docs/82379/1330310）",
+      "url": "https://web.archive.org/web/20251124053616/https://www.volcengine.com/docs/82379/1330310",
       "retrieved_at": "2026-10-11"
     }
   ],

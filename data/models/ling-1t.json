@@ -42,6 +42,11 @@
       "title": "Deprecation | Ant Ling API Docs",
       "url": "https://developer.ant-ling.com/en/docs/models/deprecation/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Ling-1T | Hugging Face（inclusionAI 官方）",
+      "url": "https://huggingface.co/inclusionAI/Ling-1T",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

@@ -10,9 +10,9 @@
     ]
   },
   "limits": {
-    "context": null,
-    "input": null,
-    "output": null
+    "context": 131072,
+    "input": 128000,
+    "output": 6144
   },
   "modalities": {
     "input": [
@@ -41,6 +41,11 @@
     {
       "title": "Qwen 1.5 & 2.0 Series Models to be Decommissioned on ModelStudio | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/en/notice/qwen_15_20_series_models_to_be_decommissioned_on_modelstudio_4ca",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档：Models | Alibaba Cloud Model Studio（原网址 https://www.alibabacloud.com/help/en/model-studio/models）",
+      "url": "https://web.archive.org/web/20250908201053/https://www.alibabacloud.com/help/en/model-studio/models",
       "retrieved_at": "2026-10-11"
     }
   ],

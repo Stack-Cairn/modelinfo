@@ -42,13 +42,18 @@
       "title": "[Model Studio] Notice of Retirement for Selected Legacy Long-tail Models | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/en/notice/model_studio_notice_of_retirement_for_selected_legacy_longtail_models_7d4",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档：SenseVoice 录音文件识别 RESTful API | 阿里云百炼（原网址 https://help.aliyun.com/zh/model-studio/developer-reference/sensevoice-recorded-speech-recognition-restful-api）",
+      "url": "https://web.archive.org/web/20250903084923/https://help.aliyun.com/zh/model-studio/developer-reference/sensevoice-recorded-speech-recognition-restful-api",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "alibaba",
       "model": "sensevoice-v1",
-      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "base_url": "https://{WorkspaceId}.cn-beijing.maas.aliyuncs.com",
       "endpoints": {},
       "reasoning_param": null
     }

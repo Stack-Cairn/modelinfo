@@ -1,0 +1,61 @@
+{
+  "id": "generalv3.5",
+  "object": "model",
+  "created": null,
+  "owned_by": "iflytek",
+  "name": "Spark Max",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": 8192,
+    "input": null,
+    "output": 8192
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Spark Max, retired. Official notice: the Max plan goes offline on 2026-03-10 and the backend is upgraded to Ultra, with quota merged into Ultra.",
+    "docs": "https://www.xfyun.cn/doc/spark/Web.html",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "星火认知大模型 WebSocket 接口文档 | 讯飞星火",
+      "url": "https://www.xfyun.cn/doc/spark/Web.html",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "星火认知大模型 HTTP 接口文档 | 讯飞星火",
+      "url": "https://www.xfyun.cn/doc/spark/HTTP%E8%B0%83%E7%94%A8%E6%96%87%E6%A1%A3.html",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "iflytek",
+      "model": "generalv3.5",
+      "base_url": "https://spark-api-open.xf-yun.com/v1",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

@@ -37,6 +37,7 @@
 | 1K = 1000 | OpenAI、Anthropic、xAI、Amazon、Cohere（对话与向量；重排模型文档写明 4096） |
 | 按模型给出精确数字 | 阿里、MiniMax、阶跃、Meta |
 
+- **思考支持**：`reasoning.supported` 只有官方明确说明支持或不支持时才写 `true` / `false`；模型页未出现 reasoning、未列推理参数，不能据此把未知值改为 `false`。
 - **思考等级**：`reasoning.efforts` 只写 API 可传的确切取值；只有开关或 Token 预算时为空数组。
 - **能力**：`features` 只列文档明确支持的能力；未写明的不列。
 - **协议差异**：只有官方明确列出的模型才标注 Responses 支持，不能从同系列其他模型外推。Google Interactions 使用 `interactions`，不标成 `responses`。同一 provider 的思考参数按协议不同时可用 `reasoning_params` 分别登记。
@@ -49,6 +50,17 @@
 - 译文只翻译原文，不增删信息、不加评价；专有名词、模型名、产品名、单位保持原样。原文是哪种语言，就不为该语言写译文。
 - 原文更新时同步更新或删除译文；`info.description` 为 `null` 时不写译文。
 
+## 官方来源检查
+
+`node scripts/check-official.mjs [文件...]` 在 `validate-data.mjs` 之外再检查四件事，不改数据：
+
+1. **官方域名**：除标题含 `api.sdk only` 的 SDK 来源，以及 `models.dev`、`ai-sdk.dev` 外，至少一条 `sources` 的主机名属于该厂商。允许的主机来自 `data/vendors/<id>.json` 的官网，以及脚本里的文档站补充表（如 `ai.google.dev`、`docs.mistral.ai`）。官网主机升到注册域时，`com.cn`、`co.jp`、`github.io` 这类公共后缀会再向前取一段，不会把整个后缀放行。`web.archive.org` 只在被存档的原地址属于这些主机时算数。
+2. **日期**：`sources[].retrieved_at` 必须是真实的 `YYYY-MM-DD`；`info.verified_at` 同样，或为 `null`。比 UTC 当天晚超过 1 天则失败；晚 1 天仍通过，避免 UTC+8 早晨把本地今天判成未来。早于 `--max-age` 天（默认 180）只警告；加上 `--strict` 时警告也失败。`--max-age` 不是非负整数时直接退出。
+3. **数值范围**：价格不为负，币种为三个大写字母，单位属于接口规范中的计价单位，`limits.input` 与 `limits.output` 不超过 `limits.context`。
+4. **必填字段**：公开字段和维护字段 `aliases`、`sources`、`providers` 必须存在。字段顺序和枚举仍由 `validate-data.mjs` 把关。
+
+`node scripts/check-official.mjs --cross [--report 路径]` 会下载 models.dev、OpenRouter 和 LiteLLM，按厂商前缀加模型 ID 或别名匹配后写出差异。同名键保留先写入的记录。价格只比较相同币种和单位：这三个目录读取的是 USD / `1M_tokens`，本地人民币、字符、分钟、页等报价跳过价格比较，但仍核对 Token 上下限；不做汇率或跨单位换算。LiteLLM 的 `max_tokens` 对照 `limits.context`，`max_input_tokens` 只对照 `limits.input`。它只提示 1000/1024、折扣价和图像/文本计价口径可能不同，不自动改 JSON。网络失败时退出码为 2。`pnpm test` 会执行 `scripts/*.test.mjs`，其中包括 `scripts/check-official.test.mjs`。
+
 ## 批量采集
 
 大批量补录时按模型厂商拆分并行处理，每组只写自己模型厂商的文件，用 `scripts/validate-data.mjs` 自检，最后统一运行 `pnpm check && pnpm build`，并人工抽查各组标注的推断值与空缺项。
@@ -57,7 +69,7 @@
 
 部分模型的发布日期、知识截止、思考等级与价格官方未公布，当前为 `null`。可在各模型详情页查看具体字段，官方更新后按上述流程补录。
 
-运行 `node scripts/audit-data.mjs` 输出全库及各厂商的字段空缺、状态统计和待核验 ID 清单（JSON）。这是本地完整性清单，空值可能不适用或官方未公布，不能当作错误率，也不能当作已完成官方全量核验的证明。`deprecated` 仍可调用，统计时与 `retired` 分开。
+运行 `node scripts/audit-data.mjs` 输出全库及各厂商的字段空缺、状态统计和待核验 ID 清单（JSON）。`node scripts/completeness.mjs` 在此基础上按厂商列出 limits、pricing 各分项、reasoning、features、info 与 sources 的空缺；`--vendor`、`--ids`、`--markdown` 可缩小范围或改成表格。这是本地完整性清单，空值可能不适用或官方未公布，不能当作错误率，也不能当作已完成官方全量核验的证明。`deprecated` 仍可调用，统计时与 `retired` 分开。
 
 本轮价格与发布日期补录见 [2026-10-11 逐型号核验记录](audits/pricing-release-2026-10-11.json)：记录补录前后数值、剩余缺项、原因与官方资料入口。该记录是当日快照；后续维护以 `data/models/` 为准。历史存档价格仅代表对应快照，不表示已下线模型仍可购买。已检索未找到、资料获取失败与官方明确未公布须区分，不能将空值统一描述为“官方未公布”。
 

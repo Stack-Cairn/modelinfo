@@ -38,9 +38,11 @@
     "knowledge_cutoff": null,
     "description": "218B total / 25B active parameter MoE model for machine translation across 50+ languages.",
     "docs": "https://docs.cohere.com/docs/north-small-translate-1.0",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-26"
   },
-  "aliases": [],
+  "aliases": [
+    "north-small-translate-09-2026"
+  ],
   "translations": {
     "zh": {
       "description": "总参数 218B、激活参数 25B 的 MoE 模型，用于 50 多种语言的机器翻译。"
@@ -50,12 +52,12 @@
     {
       "title": "North Small Translate 1.0 | Cohere Docs",
       "url": "https://docs.cohere.com/docs/north-small-translate-1.0",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-26"
     },
     {
       "title": "Cohere Model Overview",
       "url": "https://docs.cohere.com/docs/models",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-26"
     },
     {
       "title": "How does Cohere pricing work?",
@@ -81,7 +83,7 @@
   "providers": [
     {
       "id": "cohere",
-      "model": "north-small-translate-1-0",
+      "model": "north-small-translate-09-2026",
       "base_url": "https://api.cohere.com",
       "endpoints": {
         "chat": "POST /v2/chat"

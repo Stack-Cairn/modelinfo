@@ -1,0 +1,87 @@
+{
+  "id": "mercury-3",
+  "object": "model",
+  "created": 1792368000,
+  "owned_by": "inception",
+  "name": "Mercury 3",
+  "api": {
+    "types": [
+      "chat"
+    ],
+    "sdk": [
+      "inceptionai"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": 131072
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "instant",
+      "low",
+      "medium",
+      "high"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.2,
+    "output": 0.7,
+    "cache_read": 0.02,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-10-19",
+    "knowledge_cutoff": null,
+    "description": "Diffusion language model with a 1M-token context window and a maximum of 131,072 output tokens. Reasoning effort accepts instant, low, medium, and high. Text in, text out, with tool calling and structured outputs. The recorded price is the standard rate; launch pricing is 50% lower.",
+    "docs": "https://docs.inceptionlabs.ai/get-started/models",
+    "verified_at": "2026-10-22"
+  },
+  "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "扩散语言模型，上下文窗口为 1M tokens，最大输出 131,072 tokens。reasoning effort 取值为 instant、low、medium 和 high。输入和输出均为文本，支持工具调用和结构化输出。此处记录的是标准价；首发价为其五折。"
+    }
+  },
+  "sources": [
+    {
+      "title": "Models | Inception Docs",
+      "url": "https://docs.inceptionlabs.ai/get-started/models",
+      "retrieved_at": "2026-10-22"
+    },
+    {
+      "title": "Diffusion at Scale: Introducing Mercury 3 | Inception",
+      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+      "retrieved_at": "2026-10-22"
+    }
+  ],
+  "providers": [
+    {
+      "id": "inception",
+      "model": "mercury-3",
+      "base_url": "https://api.inceptionlabs.ai/v1",
+      "endpoints": {
+        "chat": "POST /chat/completions"
+      },
+      "reasoning_param": "reasoning_effort"
+    }
+  ]
+}
